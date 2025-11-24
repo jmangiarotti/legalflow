@@ -1033,57 +1033,62 @@
         </div>
 
         <div class="contact-grid">
-          <form name="contacto-legalflow" method="POST" data-netlify="true">
-            <!-- Campo honeypot para Netlify -->
-            <input type="hidden" name="form-name" value="contacto-legalflow" />
-            <p style="display:none;">
-              <label>Si sos humano, dejá esto vacío: <input name="bot-field" /></label>
-            </p>
+          <form 
+  action="https://formsubmit.co/josefina@mimlegal.com.ar" 
+  method="POST"
+>
+  <!-- Desactiva el captcha -->
+  <input type="hidden" name="_captcha" value="false">
 
-            <div class="form-row">
-              <label for="nombre">Nombre y apellido</label>
-              <input type="text" id="nombre" name="nombre" required />
-            </div>
+  <!-- Redirección después de enviar -->
+  <input type="hidden" name="_next" value="https://TU-USUARIO.github.io/legalflow#contacto">
 
-            <div class="form-row">
-              <label for="empresa">Empresa / marca</label>
-              <input type="text" id="empresa" name="empresa" />
-            </div>
+  <!-- Asunto del mail -->
+  <input type="hidden" name="_subject" value="Nueva consulta desde LegalFlow">
 
-            <div class="form-row">
-              <label for="email">Email de contacto</label>
-              <input type="email" id="email" name="email" required />
-            </div>
+  <div class="form-row">
+    <label for="nombre">Nombre y apellido</label>
+    <input type="text" id="nombre" name="nombre" required />
+  </div>
 
-            <div class="form-row">
-              <label for="telefono">Teléfono / WhatsApp</label>
-              <input type="tel" id="telefono" name="telefono" />
-              <p class="form-help">Solo lo usamos si necesitamos coordinar algo rápido.</p>
-            </div>
+  <div class="form-row">
+    <label for="empresa">Empresa / marca</label>
+    <input type="text" id="empresa" name="empresa" />
+  </div>
 
-            <div class="form-row">
-              <label for="plan">Plan que te interesa</label>
-              <select id="plan" name="plan">
-                <option value="">Todavía no lo tengo claro</option>
-                <option value="Starter">Starter</option>
-                <option value="Business">Business</option>
-                <option value="Pro Ecommerce & Tech">Pro Ecommerce & Tech</option>
-                <option value="Corporate">Corporate</option>
-              </select>
-            </div>
+  <div class="form-row">
+    <label for="email">Email de contacto</label>
+    <input type="email" id="email" name="email" required />
+  </div>
 
-            <div class="form-row">
-              <label for="mensaje">Contanos brevemente tu situación</label>
-              <textarea id="mensaje" name="mensaje" placeholder="Ej: tenemos un ecommerce en crecimiento, nunca registramos la marca y estamos firmando contratos con proveedores sin revisión..."></textarea>
-            </div>
+  <div class="form-row">
+    <label for="telefono">Teléfono / WhatsApp</label>
+    <input type="tel" id="telefono" name="telefono" />
+    <p class="form-help">Solo lo usamos si necesitamos coordinar algo rápido.</p>
+  </div>
 
-            <div class="form-row">
-              <button type="submit" class="btn-primary" style="width: 100%; justify-content: center;">
-                Enviar consulta a LegalFlow
-              </button>
-            </div>
-          </form>
+  <div class="form-row">
+    <label for="plan">Plan que te interesa</label>
+    <select id="plan" name="plan">
+      <option value="">Todavía no lo tengo claro</option>
+      <option value="Starter">Starter</option>
+      <option value="Business">Business</option>
+      <option value="Pro Ecommerce & Tech">Pro Ecommerce & Tech</option>
+      <option value="Corporate">Corporate</option>
+    </select>
+  </div>
 
+  <div class="form-row">
+    <label for="mensaje">Contanos brevemente tu situación</label>
+    <textarea id="mensaje" name="mensaje" placeholder="Ej: tenemos un ecommerce en crecimiento, nunca registramos la marca y estamos firmando contratos con proveedores sin revisión..."></textarea>
+  </div>
+
+  <div class="form-row">
+    <button type="submit" class="btn-primary" style="width: 100%; justify-content: center;">
+      Enviar consulta a LegalFlow
+    </button>
+  </div>
+</form>
           <aside class="contact-info-card">
             <h3>¿Qué pasa después de que nos escribís?</h3>
             <p>
